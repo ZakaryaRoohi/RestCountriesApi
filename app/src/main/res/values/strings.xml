@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sample Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="long_click_for_add_map_marker">برای انتخاب موقعیت انگشت خود را نگهدارید.</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_fragHome">
+
+    // define Navigation graph but not use
+    <fragment
+        android:id="@+id/nav_fragHome"
+        android:name="com.geo.sampleapplication.view.fragment.PageOneFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_page_one">
+        <action
+            android:id="@+id/action_PageOneFragment_to_PageTwoFragment"
+            app:destination="@id/page_two_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/page_two_fragment"
+        android:name="com.geo.sampleapplication.view.fragment.PageTwoFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_page_one">
+        <action
+            android:id="@+id/action_PageOneFragment_to_PageTwoFragment"
+            app:destination="@id/nav_fragHome" />
+    </fragment>
+</navigation>
